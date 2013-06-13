@@ -7,13 +7,13 @@ gem 'rails', '3.2.13'
 
 # Heroku doesn't support SQLite, so using PostGres for the same.
 #group :production, :staging do
-#gem 'pg'
+gem 'pg'
 #end
 #run local bundler before deploy
 #Make sure that `gem install pg -v '0.15.1'` succeeds before bundling.
 
 #group :development, :test do
-gem 'sqlite3'#, '1.3.7'
+#gem 'sqlite3'#, '1.3.7'
 #end
 
 
