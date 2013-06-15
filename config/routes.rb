@@ -1,4 +1,7 @@
 BalleOye::Application.routes.draw do
+  resources :topics
+
+
   resources :microposts
 
 
