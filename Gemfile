@@ -6,15 +6,15 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # Heroku doesn't support SQLite, so using PostGres for the same.
-#group :production, :staging do
-gem 'pg'
-#end
+group :production, :staging do
+  gem 'pg'
+end
 #run local bundler before deploy
 #Make sure that `gem install pg -v '0.15.1'` succeeds before bundling.
-
-#group :development, :test do
-#gem 'sqlite3'#, '1.3.7'
-#end
+# sudo apt-get install libpq-dev
+group :development, :test do
+  gem 'sqlite3'#, '1.3.7'
+end
 
 
 # Gems used only for assets and not required
